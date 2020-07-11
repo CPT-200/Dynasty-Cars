@@ -1,0 +1,347 @@
+Make,Model,Year,Body type,Colors exterior,Cylinders,Transmission
+,,,,,,
+BMW,3 Series,1990,Convertible,Blue,I6,5-speed manual
+BMW,3 Series,1990,Sedan,Red,I6,5-speed manual
+BMW,3 Series,1990,Sedan,Blue,I6,5-speed manual
+BMW,3 Series,1990,Coupe,Blue,I6,5-speed manual
+BMW,3 Series,1990,Coupe,Green,I6,5-speed manual
+BMW,3 Series,1990,Coupe,Blue,I6,5-speed manual
+BMW,3 Series,1990,Coupe,Black,I4,5-speed manual
+BMW,3 Series,1994,Convertible,Blue,I4,5-speed manual
+BMW,3 Series,1994,Convertible,Red,I6,5-speed manual
+BMW,3 Series,1994,Sedan,Blue,I4,5-speed manual
+BMW,3 Series,1994,Sedan,Blue,I6,5-speed manual
+BMW,3 Series,1994,Coupe,Green,I4,5-speed manual
+BMW,3 Series,1994,Coupe,Blue,I6,5-speed manual
+BMW,3 Series,1998,Sedan,Black,I4,5-speed manual
+BMW,3 Series,1998,Sedan,Red,I6,5-speed manual
+BMW,3 Series,1998,Hatchback,Silver,I4,5-speed manual
+BMW,3 Series,1998,Convertible,Green,I6,5-speed manual
+BMW,3 Series,1998,Convertible,Red,I6,5-speed manual
+BMW,3 Series,1998,Coupe,Green,I6,5-speed manual
+BMW,3 Series,1998,Coupe,Black,I6,5-speed manual
+BMW,3 Series,1998,Sedan,Black,I6,5-speed manual
+BMW,3 Series,1998,Coupe,Green,I6,5-speed manual
+BMW,3 Series,1998,Convertible,Black,I6,5-speed manual
+BMW,3 Series,2002,Sedan,Red,I6,5-speed manual
+BMW,3 Series,2002,Sedan,Red,I6,5-speed manual
+BMW,3 Series,2002,Sedan,Gray,I6,5-speed manual
+BMW,3 Series,2002,Sedan,Gray,I6,5-speed manual
+BMW,3 Series,2002,Coupe,Red,I6,5-speed manual
+BMW,3 Series,2002,Coupe,Red,I6,5-speed manual
+BMW,3 Series,2002,Wagon,Red,I6,5-speed manual
+BMW,3 Series,2002,Wagon,Red,I6,5-speed manual
+BMW,3 Series,2002,Convertible,Red,I6,5-speed manual
+BMW,3 Series,2002,Convertible,Red,I6,5-speed manual
+BMW,3 Series,2002,Coupe,White,I6,6-speed manual
+BMW,3 Series,2002,Convertible,White,I6,6-speed manual
+BMW,3 Series,2006,Sedan,Blue,I6,6-speed manual
+BMW,3 Series,2006,Sedan,Blue,I6,6-speed manual
+BMW,3 Series,2006,Sedan,Blue,I6,6-speed manual
+BMW,3 Series,2006,Sedan,Blue,I6,6-speed manual
+BMW,3 Series,2006,Coupe,Blue,I6,5-speed manual
+BMW,3 Series,2006,Coupe,Green,I6,6-speed manual
+BMW,3 Series,2006,Wagon,Blue,I6,6-speed manual
+BMW,3 Series,2006,Convertible,Blue,I6,5-speed manual
+BMW,3 Series,2006,Convertible,Blue,I6,6-speed manual
+BMW,3 Series,2006,Coupe,Blue,I6,6-speed manual
+BMW,3 Series,2006,Convertible,Black,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Brown,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Brown,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Brown,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Blue,I6,6-speed manual
+BMW,3 Series,2010,Wagon,Red,I6,6-speed manual
+BMW,3 Series,2010,Wagon,Red,I6,6-speed manual
+BMW,3 Series,2010,Coupe,Brown,I6,6-speed manual
+BMW,3 Series,2010,Coupe,Blue,I6,6-speed manual
+BMW,3 Series,2010,Coupe,Blue,I6,6-speed manual
+BMW,3 Series,2010,Coupe,Green,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Red,I6,6-speed shiftable automatic
+BMW,3 Series,2010,Convertible,White,I6,6-speed manual
+BMW,3 Series,2010,Convertible,Blue,I6,6-speed manual
+BMW,3 Series,2010,Sedan,Red,V8,6-speed manual
+BMW,3 Series,2010,Coupe,Blue,V8,6-speed manual
+BMW,3 Series,2010,Convertible,Brown,V8,6-speed manual
+BMW,3 Series,2014,Sedan,Brown,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Green,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,White,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Red,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Silver,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Green,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Green,I6,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Blue,I6,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Black,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Silver,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Wagon,Silver,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Wagon,Black,I4,8-speed shiftable automatic
+BMW,3 Series,2014,Sedan,Red,I6,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,Blue,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,Blue,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,Red,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I6,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I6,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Wagon,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Wagon,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,White,I4,8-speed shiftable automatic
+BMW,3 Series,2018,Sedan,Grey,I6,6-speed manual
+BMW,3 Series Gran Turismo,2014,Hatchback,Brown,I4,8-speed shiftable automatic
+BMW,3 Series Gran Turismo,2014,Hatchback,Brown,I6,8-speed shiftable automatic
+BMW,3 Series Gran Turismo,2018,Hatchback,Brown,I4,8-speed shiftable automatic
+BMW,3 Series Gran Turismo,2018,Hatchback,Brown,I6,8-speed shiftable automatic
+,,,,Red,,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Red,I6,
+Ford,F-150,1990,Truck,Red,I6,
+Ford,F-150,1990,Truck,Brown,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Green,I6,
+Ford,F-150,1990,Truck,Red,I6,
+Ford,F-150,1990,Truck,White,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Red,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Brown,I6,
+Ford,F-150,1990,Truck,Brown,I6,
+Ford,F-150,1990,Truck,Green,I6,
+Ford,F-150,1990,Truck,White,I6,
+Ford,F-150,1990,Truck,Red,I6,
+Ford,F-150,1990,Truck,Silver,I6,
+Ford,F-150,1990,Truck,Green,I6,
+Ford,F-150,1990,Truck,Green,I6,
+Ford,F-150,1990,Truck,Blue,I6,
+Ford,F-150,1990,Truck,Black,I6,
+Ford,F-150,1990,Truck,Silver,I6,
+Ford,F-150,1990,Truck,Silver,I6,
+Ford,F-150,1990,Truck,Black,I6,
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,Brown,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Green,V6,5-speed manual
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,White,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Brown,V6,5-speed manual
+Ford,F-150,2000,Truck,Brown,V6,5-speed manual
+Ford,F-150,2000,Truck,Green,V6,5-speed manual
+Ford,F-150,2000,Truck,Blue,V6,5-speed manual
+Ford,F-150,2000,Truck,Red,V8,5-speed manual
+Ford,F-150,2000,Truck,Silver,V8,5-speed manual
+Ford,F-150,2000,Truck,Red,V6,5-speed manual
+Ford,F-150,2000,Truck,Black,V6,5-speed manual
+Ford,F-150,2000,Truck,White,V6,5-speed manual
+Ford,F-150,2000,Truck,White,V8,5-speed manual
+Ford,F-150,2000,Truck,White,V8,5-speed manual
+Ford,F-150,2000,Truck,Blue,V8,5-speed manual
+Ford,F-150,2000,Truck,Silver,V6,5-speed manual
+Ford,F-150,2000,Truck,Black,V6,5-speed manual
+Ford,F-150,2000,Truck,Brown,V6,5-speed manual
+Ford,F-150,2000,Truck,Brown,V8,5-speed manual
+Ford,F-150,2000,Truck,Black,V8,5-speed manual
+Ford,F-150,2000,Truck,Black,V8,5-speed manual
+Ford,F-150,2000,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2000,Truck,Green,V8,4-speed automatic
+Ford,F-150,2000,Truck,Black,V8,4-speed automatic
+Ford,F-150,2000,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2000,Truck,Black,V8,4-speed automatic
+Ford,F-150,2000,Truck,Green,V8,4-speed automatic
+Ford,F-150,2000,Truck,Silver,V8,4-speed automatic
+Ford,F-150,2000,Truck,Silver,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,4-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2010,Truck,Green,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,4-speed automatic
+Ford,F-150,2010,Truck,White,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,4-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,4-speed automatic
+Ford,F-150,2010,Truck,White,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Silver,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Black,V8,6-speed automatic
+Ford,F-150,2010,Truck,Silver,V8,6-speed automatic
+Ford,F-150,2010,Truck,Silver,V8,6-speed automatic
+Ford,F-150,2010,Truck,Black,V8,4-speed automatic
+Ford,F-150,2010,Truck,Red,V8,4-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,White,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Blue,V8,6-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,6-speed automatic
+Ford,F-150,2010,Truck,Brown,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,6-speed automatic
+Ford,F-150,2010,Truck,White,V8,6-speed automatic
+Ford,F-150,2010,Truck,Red,V8,6-speed automatic
+Ford,F-150,2010,Truck,Silver,V8,6-speed automatic
+Ford,F-150,2010,Truck,Green,V8,6-speed automatic
+Ford,F-150,2019,Truck,Green,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Black,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Silver,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Silver,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Black,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Brown,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,White,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Brown,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Brown,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,White,V6,6-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Silver,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Green,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Black,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Silver,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Silver,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Black,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Blue,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V8,10-speed shiftable automatic
+Ford,F-150,2019,Truck,White,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,10-speed shiftable automatic
+Ford,F-150,2019,Truck,Red,V6,10-speed shiftable automatic
+,,,,Blue,,
+Toyota,Camry,1990,Sedan,Red,I4,5-speed manual
+Toyota,Camry,1990,Sedan,Red,I4,4-speed automatic
+Toyota,Camry,1990,Sedan,Brown,I4,4-speed automatic
+Toyota,Camry,1990,Sedan,Blue,I4,5-speed manual
+Toyota,Camry,1990,Sedan,Blue,I4,5-speed manual
+Toyota,Camry,1990,Wagon,Green,V6,4-speed automatic
+Toyota,Camry,1990,Wagon,Red,I4,4-speed automatic
+Toyota,Camry,1994,Coupe,White,V6,4-speed automatic
+Toyota,Camry,1994,Coupe,Blue,I4,5-speed manual
+Toyota,Camry,1994,Coupe,Red,I4,4-speed automatic
+Toyota,Camry,1994,Coupe,Blue,V6,4-speed automatic
+Toyota,Camry,1994,Wagon,Brown,V6,4-speed automatic
+Toyota,Camry,1994,Wagon,Brown,I4,4-speed automatic
+Toyota,Camry,1994,Wagon,Green,I4,4-speed automatic
+Toyota,Camry,1994,Sedan,White,V6,4-speed automatic
+Toyota,Camry,1994,Sedan,Red,V6,4-speed automatic
+Toyota,Camry,1994,Sedan,Silver,I4,5-speed manual
+Toyota,Camry,1994,Sedan,Green,I4,4-speed automatic
+Toyota,Camry,1994,Sedan,Green,V6,4-speed automatic
+Toyota,Camry,1994,Sedan,Blue,I4,4-speed automatic
+Toyota,Camry,1998,Sedan,Black,I4,5-speed manual
+Toyota,Camry,1998,Sedan,Silver,V6,5-speed manual
+Toyota,Camry,1998,Sedan,Silver,I4,4-speed automatic
+Toyota,Camry,1998,Sedan,Black,V6,4-speed automatic
+Toyota,Camry,1998,Sedan,Red,I4,4-speed automatic
+Toyota,Camry,1998,Sedan,Blue,V6,4-speed automatic
+Toyota,Camry,2002,Sedan,Blue,I4,5-speed manual
+Toyota,Camry,2002,Sedan,Red,I4,4-speed automatic
+Toyota,Camry,2002,Sedan,Black,I4,5-speed manual
+Toyota,Camry,2002,Sedan,Black,I4,4-speed automatic
+Toyota,Camry,2002,Sedan,Black,V6,4-speed automatic
+Toyota,Camry,2002,Sedan,Blue,V6,4-speed automatic
+Toyota,Camry,2002,Sedan,Red,I4,4-speed automatic
+Toyota,Camry,2002,Sedan,Red,V6,4-speed automatic
+Toyota,Camry,2006,Sedan,Brown,I4,5-speed manual
+Toyota,Camry,2006,Sedan,Blue,I4,5-speed automatic
+Toyota,Camry,2006,Sedan,Blue,I4,5-speed manual
+Toyota,Camry,2006,Sedan,Green,I4,5-speed automatic
+Toyota,Camry,2006,Sedan,Red,I4,5-speed manual
+Toyota,Camry,2006,Sedan,White,I4,5-speed automatic
+Toyota,Camry,2006,Sedan,Blue,V6,5-speed automatic
+Toyota,Camry,2006,Sedan,Red,I4,5-speed automatic
+Toyota,Camry,2006,Sedan,Blue,V6,5-speed automatic
+Toyota,Camry,2006,Sedan,Brown,V6,5-speed automatic
+Toyota,Camry,2010,Sedan,Brown,I4,6-speed manual
+Toyota,Camry,2010,Sedan,Green,I4,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,White,I4,6-speed manual
+Toyota,Camry,2010,Sedan,Red,I4,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,Silver,I4,6-speed manual
+Toyota,Camry,2010,Sedan,Green,I4,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,Green,V6,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,Blue,V6,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,Black,I4,6-speed shiftable automatic
+Toyota,Camry,2010,Sedan,Silver,V6,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Silver,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Black,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Red,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Red,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Gray,V6,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Gray,V6,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,V6,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Blue,V6,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Gray,I4,6-speed shiftable automatic
+Toyota,Camry,2014,Sedan,Gray,I4,6-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Gray,I4,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Red,V6,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2018,Sedan,Blue,V6,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Red,I4,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Brown,I4,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Blue,I4,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Blue,V6,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Green,I4,8-speed shiftable automatic
+Toyota,Camry,2019,Sedan,Red,V6,8-speed shiftable automatic
+Toyota,Camry Hybrid,2010,Sedan,White,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2014,Sedan,Blue,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2014,Sedan,Red,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2014,Sedan,Blue,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2014,Sedan,Brown,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2014,Sedan,Brown,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2018,Sedan,Green,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2018,Sedan,White,I4,continuously variable-speed automatic
+Toyota,Camry Hybrid,2018,Sedan,Red,I4,continuously variable-speed automatic
