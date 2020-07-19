@@ -63,26 +63,6 @@ public class DynastyGUI extends JFrame {
 			wagonList = (ArrayList<Wagon>) carsList.get(5);
 			suvList = (ArrayList<SUV>) carsList.get(6);
 			
-/*			for (int i=0; i < coupeList.size(); ++i) {
-				System.out.println(coupeList.get(i).toString());
-			}
-			for (int i=0; i < sedanList.size(); ++i) {
-				System.out.println(sedanList.get(i).toString());
-			}
-			for (int i=0; i < convertibleList.size(); ++i) {
-				System.out.println(convertibleList.get(i).toString());
-			}
-			for (int i=0; i < hatchbackList.size(); ++i) {
-				System.out.println(hatchbackList.get(i).toString());
-			}
-			for (int i=0; i < truckList.size(); ++i) {
-				System.out.println(truckList.get(i).toString());
-			}
-			for (int i=0; i < wagonList.size(); ++i) {
-				System.out.println(wagonList.get(i).toString());
-			}
-			*/
-			
 			// Search values for GUI
 			values.setValues(carsList);
 			
@@ -225,14 +205,6 @@ public class DynastyGUI extends JFrame {
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblNewLabel.setBounds(68, 68, 140, 14);
 		searchPanel.add(lblNewLabel);
-		
-/*		String[] color = {"Color", "Blue", "Red", "Green"};
-		String[] brand = {"Brand", "Toyota", "Dodge", "Ram"};
-		String[] type = {"Type", "SUV", "Truck", "Coupe"};
-		String[] MPG = {"MPG", "70-45", "44-35", "34-25", "24-10"};
-		String[] convert = {"Convertible", "Yes", "No"};
-		String[] fuel = {"Fuel type", "Gasoline", "Diesel"};
-		*/
 		
 		String[] color = values.getColors();
 		String[] makes = values.getMakes();
