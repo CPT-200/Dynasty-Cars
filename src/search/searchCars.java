@@ -1,7 +1,6 @@
 package search;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 import vehicletypes.*;
 
