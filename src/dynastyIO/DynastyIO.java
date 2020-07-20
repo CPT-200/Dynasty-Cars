@@ -23,6 +23,11 @@ public class DynastyIO {
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static ArrayList importCarData() throws IOException {
+		/**
+		 * Import data from csv file
+		 * 
+		 * @return: ArrayList	Arraylist with all the cars
+		 */
 		
 		ArrayList return_list = new ArrayList();
 		
@@ -90,15 +95,83 @@ public class DynastyIO {
 		return return_list;
 	}
 	
-	public static void exportCarData() throws IOException {
+	public static void exportCarData(ArrayList<Coupe> coupeList, 
+			ArrayList<Sedan> sedanList, ArrayList<Convertible> convertibleList, 
+			ArrayList<Hatchback> hatchbackList, ArrayList<Truck> truckList, 
+			ArrayList<Wagon> wagonList, ArrayList<SUV> suvList) throws IOException {
+		/**
+		 * Method to export all car data to a csv file
+		 * 
+		 * @param: ArrayList<Coupe>
+		 * @param: ArrayList<Sedan>
+		 * @param: ArrayList<Convertible>
+		 * @param: ArrayList<Hatchback>
+		 * @param: ArrayList<Truck>
+		 * @param: ArrayList<Wagon>
+		 * @param: ArrayList<SUV>
+		 */
 		try {
-			// Open output file
-			FileOutputStream outputFile = new FileOutputStream("output.txt");
 			// Create PrintWriter to send output to file
-			PrintWriter printOutput = new PrintWriter(outputFile);
+			PrintWriter printOutput = new PrintWriter(new FileOutputStream("simplifiedDatabase.csv"));
+			
+			if (coupeList != null) {
+				for (int i=0; i < coupeList.size(); ++i) {
+					 printOutput.printf("%s,%s,%d,Coupe,%s,%s,%s\n", coupeList.get(i).getMake(), 
+							 coupeList.get(i).getModel(), coupeList.get(i).getYear(), 
+							 coupeList.get(i).getColor(), coupeList.get(i).getEngine(), 
+							 coupeList.get(i).getTransmission());
+				 }
+			}
+			if (sedanList != null) {
+				for (int i=0; i < sedanList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,Sedan,%s,%s,%s\n", sedanList.get(i).getMake(), 
+							sedanList.get(i).getModel(), sedanList.get(i).getYear(), 
+							sedanList.get(i).getColor(), sedanList.get(i).getEngine(), 
+							sedanList.get(i).getTransmission());
+				}
+			}
+			if (convertibleList != null) {
+				for (int i=0; i < convertibleList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,Convertible,%s,%s,%s\n", convertibleList.get(i).getMake(), 
+							convertibleList.get(i).getModel(), convertibleList.get(i).getYear(), 
+							convertibleList.get(i).getColor(), convertibleList.get(i).getEngine(), 
+							convertibleList.get(i).getTransmission());
+				}
+			}
+			if (hatchbackList != null) {
+				for (int i=0; i < hatchbackList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,Hatchback,%s,%s,%s\n", hatchbackList.get(i).getMake(), 
+							hatchbackList.get(i).getModel(), hatchbackList.get(i).getYear(), 
+							hatchbackList.get(i).getColor(), hatchbackList.get(i).getEngine(), 
+							hatchbackList.get(i).getTransmission());
+				}
+			}
+			if (truckList != null) {
+				for (int i=0; i < truckList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,Truck,%s,%s,%s\n", truckList.get(i).getMake(), 
+							truckList.get(i).getModel(), truckList.get(i).getYear(), 
+							truckList.get(i).getColor(), truckList.get(i).getEngine(), 
+							truckList.get(i).getTransmission());
+				}
+			}
+			if (wagonList != null) {
+				for (int i=0; i < wagonList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,Wagon,%s,%s,%s\n", wagonList.get(i).getMake(), 
+							wagonList.get(i).getModel(), wagonList.get(i).getYear(), 
+							wagonList.get(i).getColor(), wagonList.get(i).getEngine(), 
+							wagonList.get(i).getTransmission());
+				}
+			}
+			if (suvList != null) {
+				for (int i=0; i < suvList.size(); ++i) {
+					printOutput.printf("%s,%s,%d,SUV,%s,%s,%s\n", suvList.get(i).getMake(), 
+							suvList.get(i).getModel(), suvList.get(i).getYear(), 
+							suvList.get(i).getColor(), suvList.get(i).getEngine(), 
+							suvList.get(i).getTransmission());
+				}
+			}
 			
 			printOutput.close();
-			outputFile.close();
 		}
 		catch (Exception e) {
 			
