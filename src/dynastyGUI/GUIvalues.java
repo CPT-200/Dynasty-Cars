@@ -39,8 +39,13 @@ public class GUIvalues {
 		}
 	}
 	
-	public void addValues(ArrayList<Car> carList) {
-		// TODO Stub
+	public void addValues(Car newValues) {
+		makeValues.add(newValues.getMake());
+		modelValues.add(newValues.getModel());
+		yearValues.add(String.valueOf(newValues.getYear()));
+		colorValues.add(newValues.getColor());
+		engineValues.add(newValues.getEngine());
+		transmissionValues.add(newValues.getTransmission());
 	}
 	
 	public String[] getMakes() {
