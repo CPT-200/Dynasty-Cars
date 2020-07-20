@@ -498,6 +498,19 @@ public class DynastyGUI extends JFrame {
 		logOutBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
+				int exportYN = JOptionPane.showConfirmDialog(
+				    getContentPane(), "Do you want to export the database?",
+				    "Export Database?", JOptionPane.YES_NO_OPTION);
+				System.out.println(exportYN);
+				if (exportYN == 0) {
+					try {
+						DynastyIO.exportCarData(coupeList, sedanList, convertibleList, 
+								hatchbackList, truckList, wagonList, suvList);
+					} catch (Exception ex) {
+						JOptionPane.showMessageDialog(getContentPane(), "Export Failed\n" + 
+								ex.getMessage());
+					}
+				}
 				JOptionPane.showMessageDialog(getContentPane(), "Logging out");
 				isAdmin = false;
 				loginPanel();
@@ -510,6 +523,19 @@ public class DynastyGUI extends JFrame {
 		exitBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
+				int exportYN = JOptionPane.showConfirmDialog(
+					    getContentPane(), "Do you want to export the database?",
+					    "Export Database?", JOptionPane.YES_NO_OPTION);
+					System.out.println(exportYN);
+					if (exportYN == 0) {
+						try {
+							DynastyIO.exportCarData(coupeList, sedanList, convertibleList, 
+									hatchbackList, truckList, wagonList, suvList);
+						} catch (Exception ex) {
+							JOptionPane.showMessageDialog(getContentPane(), "Export Failed\n" + 
+									ex.getMessage());
+						}
+					}
 				JOptionPane.showMessageDialog(getContentPane(), "Closing Program");
 				System.exit(0);
 			}
