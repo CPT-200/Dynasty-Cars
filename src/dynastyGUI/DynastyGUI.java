@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -406,7 +407,7 @@ public class DynastyGUI extends JFrame {
 		btnAddCar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				String[] bodies = new String[] {"SUV", "Truck", "Coupe", "Sedan", 
+/*				String[] bodies = new String[] {"SUV", "Truck", "Coupe", "Sedan", 
 						"Convertible", "Hatchback", "Wagon"};
 				String type = (String)JOptionPane.showInputDialog(
 	                    getContentPane(), "Select Car Type", "Add Car",
@@ -431,8 +432,55 @@ public class DynastyGUI extends JFrame {
 	                    JOptionPane.PLAIN_MESSAGE, null, values.getTransmissions(), "");
 				
 				Car addNewCar;
-				
+				*/
 				try {
+					String[] bodies = new String[] {"SUV", "Truck", "Coupe", "Sedan", 
+							"Convertible", "Hatchback", "Wagon"};
+					String type = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Select Car Type", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, bodies, "");
+					if (type == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String make = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Enter Car Make", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, null, "Honda");
+					if (make == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String model = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Enter Car Model", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, null, "Accord");
+					if (model == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String year = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Enter Car Year", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, null, "2010");
+					if (year == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String color = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Enter Car Color", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, null, "Red");
+					if (color == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String engine = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Select Car Engine", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, values.getEngines(), "");
+					if (engine == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					String transmission = (String)JOptionPane.showInputDialog(
+		                    getContentPane(), "Select Car Transmission", "Add Car",
+		                    JOptionPane.PLAIN_MESSAGE, null, values.getTransmissions(), "");
+					if (transmission == null || bodies.length < 1) {
+						throw new NoSuchElementException("Adding Car Canceled");
+					}
+					
+					Car addNewCar;
+					
 					if (type.equalsIgnoreCase("Coupe")) {
 						addNewCar = new Coupe();
 						coupeList.add((Coupe) addNewCar);
@@ -468,7 +516,12 @@ public class DynastyGUI extends JFrame {
 					values.addValues(addNewCar);
 					
 					JOptionPane.showMessageDialog(getContentPane(), "Adding New Car");
-				} catch (Exception ex2) {
+				} 
+				catch (NoSuchElementException cancel) {
+					JOptionPane.showMessageDialog(getContentPane(), "Canceled!\n" + 
+							cancel.getMessage());
+				}
+				catch (Exception ex2) {
 					JOptionPane.showMessageDialog(getContentPane(), "Error adding New Car!\n" + 
 							ex2.getMessage());
 				}
