@@ -9,7 +9,7 @@ import java.util.TreeSet;
 import vehicletypes.Car;
 
 public class GUIvalues {
-	
+	// Data fields - store values as HashSets
 	private Set<String> makeValues = new HashSet<String>();
 	private Set<String> modelValues = new HashSet<String>();
 	private Set<String> yearValues = new TreeSet<String>();
@@ -27,6 +27,11 @@ public class GUIvalues {
 	}  // Default Constructor
 	
 	public void setValues(ArrayList<ArrayList<Car>> carList) {
+		/**
+		 * Set Values using and ArrayList of ArrayLists conaining all vehicles
+		 * 
+		 * @param: ArrayList	ArrayList of ArrayLists of type <Car>
+		 */
 		for (int i=0; i < carList.size(); ++i) {
 			for (int j=0; j < carList.get(i).size(); j++) {
 				makeValues.add(carList.get(i).get(j).getMake());
@@ -40,6 +45,11 @@ public class GUIvalues {
 	}
 	
 	public void addValues(Car newValues) {
+		/**
+		 * Add new values to sets
+		 * 
+		 * @param: Car	Car object to pull values from
+		 */
 		makeValues.add(newValues.getMake());
 		modelValues.add(newValues.getModel());
 		yearValues.add(String.valueOf(newValues.getYear()));
@@ -49,6 +59,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getMakes() {
+		/**
+		 * String of all Makes in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = makeValues.iterator();
 		
@@ -60,6 +75,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getModels() {
+		/**
+		 * String of all Models in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = modelValues.iterator();
 		
@@ -71,6 +91,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getYears() {
+		/**
+		 * String of all Years in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = yearValues.iterator();
 		
@@ -82,6 +107,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getColors() {
+		/**
+		 * String of all Colors in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = colorValues.iterator();
 		
@@ -93,6 +123,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getEngines() {
+		/**
+		 * String of all Engines in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = engineValues.iterator();
 		
@@ -104,6 +139,11 @@ public class GUIvalues {
 	}
 	
 	public String[] getTransmissions() {
+		/**
+		 * String of all Transmissions in Set
+		 * 
+		 * @return: String[]	String Array of values
+		 */
 		StringBuffer sb = new StringBuffer();
 		Iterator<String> it = transmissionValues.iterator();
 		
