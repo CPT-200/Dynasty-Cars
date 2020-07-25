@@ -63,6 +63,14 @@ public class searchCars {
 	}
 	
 	public static StringBuffer searchFor(StringBuffer carList, String searchitem) {
+		/**
+		 * Returns StringBuffer with results of search
+		 * 
+		 * @param: StringBuffer		Buffer containing items to search
+		 * @param: String			item to search for
+		 * 
+		 * @return: StringBuffer	returns search results
+		 */
 		StringBuffer searchList = new StringBuffer();
 		String[] carList_split = carList.toString().split("\n");
 		for (int i=0; i < carList_split.length; ++i) {
