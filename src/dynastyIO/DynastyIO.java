@@ -10,14 +10,13 @@ import java.util.Scanner;
 import vehicletypes.*;
 
 public class DynastyIO {
-	
+	// ArrayLists for storing vehicles
 	private static ArrayList<Coupe> coupeList = new ArrayList<Coupe>();
 	private static ArrayList<Sedan> sedanList = new ArrayList<Sedan>();
 	private static ArrayList<Convertible> convertibleList = new ArrayList<Convertible>();
 	private static ArrayList<Hatchback> hatchbackList = new ArrayList<Hatchback>();
 	private static ArrayList<Truck> truckList = new ArrayList<Truck>();
 	private static ArrayList<Wagon> wagonList = new ArrayList<Wagon>();
-	
 	@SuppressWarnings("unused")
 	private static ArrayList<SUV> suvList = new ArrayList<SUV>();
 	
