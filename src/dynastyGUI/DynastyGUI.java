@@ -36,18 +36,22 @@ public class DynastyGUI extends JFrame {
 	 */
 	private static boolean isAdmin = false;
 	
+	/**
+	 * ArrayLists for vehicles
+	 */
 	private static ArrayList<Coupe> coupeList = new ArrayList<Coupe>();
 	private static ArrayList<Sedan> sedanList = new ArrayList<Sedan>();
 	private static ArrayList<Convertible> convertibleList = new ArrayList<Convertible>();
 	private static ArrayList<Hatchback> hatchbackList = new ArrayList<Hatchback>();
 	private static ArrayList<Truck> truckList = new ArrayList<Truck>();
 	private static ArrayList<Wagon> wagonList = new ArrayList<Wagon>();
-	
 	@SuppressWarnings("unused")
 	private static ArrayList<SUV> suvList = new ArrayList<SUV>();
 	
+	// Object to store search history
 	private static searchHistory history = new searchHistory();
 	
+	// Object to store GUI Values
 	private static GUIvalues values = new GUIvalues();
 
 	/**
@@ -56,11 +60,13 @@ public class DynastyGUI extends JFrame {
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) throws IOException {
+		// Import Database
 		ArrayList carsList = DynastyIO.importCarData();
 		
+		// If error importing then print out error
 		if (carsList.get(0).toString().contains("Error")) {
 			System.out.print(carsList.get(0).toString());
-		} else {
+		} else {  // Separate vehicles into ArrayLists
 			coupeList = (ArrayList<Coupe>) carsList.get(0);
 			sedanList = (ArrayList<Sedan>) carsList.get(1);
 			convertibleList = (ArrayList<Convertible>) carsList.get(2);
@@ -110,6 +116,9 @@ public class DynastyGUI extends JFrame {
 	}
 	
 	public void loginPanel() {
+		/**
+		 * Display Login Panel
+		 */
 		JPanel loginPanel = new JPanel();
 		loginPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		loginPanel.setLayout(null);
@@ -199,6 +208,9 @@ public class DynastyGUI extends JFrame {
 	}
 	
 	public void searchPanel() {
+		/**
+		 * Display search panel
+		 */
 		JPanel searchPanel = new JPanel();
 		searchPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		searchPanel.setLayout(null);
@@ -343,6 +355,9 @@ public class DynastyGUI extends JFrame {
 	}
 	
 	public void menuAdminPanel() {
+		/**
+		 * Display the Admin Menu
+		 */
 		JPanel menuAdmin = new JPanel();
 		menuAdmin.setBorder(new EmptyBorder(5, 5, 5, 5));
 		menuAdmin.setLayout(null);
@@ -407,32 +422,9 @@ public class DynastyGUI extends JFrame {
 		btnAddCar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-/*				String[] bodies = new String[] {"SUV", "Truck", "Coupe", "Sedan", 
-						"Convertible", "Hatchback", "Wagon"};
-				String type = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Select Car Type", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, bodies, "");
-				String make = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Enter Car Make", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, null, "Honda");
-				String model = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Enter Car Model", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, null, "Accord");
-				String year = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Enter Car Year", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, null, "2010");
-				String color = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Enter Car Color", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, null, "Red");
-				String engine = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Select Car Engine", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, values.getEngines(), "");
-				String transmission = (String)JOptionPane.showInputDialog(
-	                    getContentPane(), "Select Car Transmission", "Add Car",
-	                    JOptionPane.PLAIN_MESSAGE, null, values.getTransmissions(), "");
-				
-				Car addNewCar;
-				*/
+				// Show Dialogs to configure new car to add
+				// Throw NoSuchElementException if canceling
+				// Any other Exception displays and error
 				try {
 					String[] bodies = new String[] {"SUV", "Truck", "Coupe", "Sedan", 
 							"Convertible", "Hatchback", "Wagon"};
@@ -605,7 +597,9 @@ public class DynastyGUI extends JFrame {
 	
 	public void searchDisplayPanel(String make, String model, String year, 
 			String type, String color, String engine) {
-		
+		/**
+		 * Dispaly search panel with results of search
+		 */
 		// Add search string to history
 		history.add(String.format("%s %s %s %s %s %s", make, model, year, type, color, engine));
 		
@@ -646,20 +640,20 @@ public class DynastyGUI extends JFrame {
 		searchDisplayPanel.add(newSearchBtn);
 		
 		updatePane(searchDisplayPanel);
-		
+		// Start new thread to run search
 		Runnable displayAll = new Runnable() {
 			@Override
 			public void run() {
 				StringBuffer carSearch = new StringBuffer();
 				
-				if (type.equalsIgnoreCase("All")) {
+				if (type.equalsIgnoreCase("All")) {  // If searching all
 					carSearch.append(search.searchCars.searchAll(coupeList, "Coupe"));
 					carSearch.append(search.searchCars.searchAll(sedanList, "Sedan"));
 					carSearch.append(search.searchCars.searchAll(convertibleList, "Convertible"));
 					carSearch.append(search.searchCars.searchAll(hatchbackList, "Hatchback"));
 					carSearch.append(search.searchCars.searchAll(truckList, "Truck"));
 					carSearch.append(search.searchCars.searchAll(wagonList, "Wagon"));
-				} else {
+				} else {  // If a car type is selected then add that type only to search
 					if (type.equalsIgnoreCase("Coupe")) { 
 						carSearch.append(search.searchCars.searchAll(coupeList, "Coupe"));
 					} else if (type.equalsIgnoreCase("Sedan")) { 
@@ -689,7 +683,7 @@ public class DynastyGUI extends JFrame {
 				if (!engine.equalsIgnoreCase("All")) {
 					carSearch = search.searchCars.searchFor(carSearch, engine);
 				}
-				
+				// Display search into ScrollPane.  If Null show "None Found"
 				try {
 					displaySearch.append(carSearch.toString());
 				} catch (NullPointerException e) {
@@ -708,100 +702,10 @@ public class DynastyGUI extends JFrame {
 		displayAllThread.start();
 	}
 	
-/*	public void searchAdminPanel() {
-		JPanel searchAdminPanel = new JPanel();
-		searchAdminPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		searchAdminPanel.setLayout(null);
-		getContentPane().removeAll();
-		
-		
-		JLabel lblSearch = new JLabel("Search");
-		lblSearch.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblSearch.setBounds(187, 11, 60, 37);
-		searchAdminPanel.add(lblSearch);
-		
-		JLabel lblNewLabel = new JLabel("Enter Search Parameters:");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel.setBounds(68, 68, 140, 14);
-		searchAdminPanel.add(lblNewLabel);
-		
-		String[] color = {"Color", "Blue", "Red", "Green"};
-		String[] brand = {"Brand", "Toyota", "Dodge", "Ram"};
-		String[] type = {"Type", "SUV", "Truck", "Coupe"};
-		String[] MPG = {"MPG", "70-45", "44-35", "34-25", "24-10"};
-		String[] convert = {"Convertible", "Yes", "No"};
-		String[] fuel = {"Fuel type", "Gasoline", "Diesel"};
-		
-		JComboBox<String> colorBox = new JComboBox<String>(color);
-		colorBox.setToolTipText("Color");
-		colorBox.setBounds(260, 124, 86, 20);
-		searchAdminPanel.add(colorBox);
-		
-		JComboBox<String> brandBox = new JComboBox<String>(brand);
-		brandBox.setToolTipText("Brand");
-		brandBox.setBounds(68, 93, 86, 20);
-		searchAdminPanel.add(brandBox);
-		
-		JComboBox<String> typeBox = new JComboBox<String>(type);
-		typeBox.setToolTipText("Type");
-		typeBox.setBounds(164, 93, 86, 20);
-		searchAdminPanel.add(typeBox);
-		
-		JComboBox<String> convertBox = new JComboBox<String>(convert);
-		convertBox.setToolTipText("Convertible");
-		convertBox.setBounds(164, 124, 86, 20);
-		searchAdminPanel.add(convertBox);
-		
-		JComboBox<String> fuelBox = new JComboBox<String>(fuel);
-		fuelBox.setToolTipText("Fuel Type");
-		fuelBox.setBounds(68, 124, 86, 20);
-		searchAdminPanel.add(fuelBox);
-		
-		JComboBox<String> MPGBox = new JComboBox<String>(MPG);
-		MPGBox.setToolTipText("MPG");
-		MPGBox.setBounds(260, 93, 86, 20);
-		searchAdminPanel.add(MPGBox);
-		
-		JButton findBtn = new JButton("Find");
-		findBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				//Access database to perform search function
-				JOptionPane.showMessageDialog(getContentPane(), "Searching Database for the Perfect Vehicle");
-				searchDisplayAdminPanel();
-			}
-		});
-		findBtn.setBounds(161, 169, 89, 23);
-		searchAdminPanel.add(findBtn);
-		
-		JButton backMenuBtn = new JButton("Back");
-		backMenuBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				menuAdminPanel();
-			}
-		});
-		backMenuBtn.setBounds(10, 227, 86, 23);
-		searchAdminPanel.add(backMenuBtn);
-		
-		JLabel label = new JLabel("Admin Controls");
-		label.setBounds(10, 11, 96, 14);
-		searchAdminPanel.add(label);
-		
-		JButton btnSearchHistory = new JButton("Search History");
-		btnSearchHistory.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				historyAdminPanel();
-			}
-		});
-		btnSearchHistory.setBounds(10, 186, 118, 30);
-		searchAdminPanel.add(btnSearchHistory);
-		
-		updatePane(searchAdminPanel);
-	}
-	*/
 	public void displayAdminPanel() {
+		/**
+		 * Show Entire Inventory
+		 */
 		
 		JPanel displayAdminPanel = new JPanel();
 		displayAdminPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -866,57 +770,12 @@ public class DynastyGUI extends JFrame {
 		Thread displayAllThread = new Thread(displayAll);
 		
 		displayAllThread.start();
-/*		
-		StringBuffer carSearch = search.searchCars.doSearch(coupeList, "Coupe");
-		carSearch.append(search.searchCars.doSearch(sedanList, "Sedan"));
-		carSearch.append(search.searchCars.doSearch(convertibleList, "Convertible"));
-		carSearch.append(search.searchCars.doSearch(hatchbackList, "Hatchback"));
-		carSearch.append(search.searchCars.doSearch(truckList, "Truck"));
-		carSearch.append(search.searchCars.doSearch(wagonList, "Wagon"));
-		
-		System.out.print(carSearch.toString());
-		
-		displaySearch.append(carSearch.toString());
-		displaySearch.setEditable(false);
-		
-		updatePane(displayAdminPanel);
-		*/
 	}
 	
-/*	public void searchDisplayAdminPanel() {
-		JPanel searchDisplayAdminPanel = new JPanel();
-		searchDisplayAdminPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		searchDisplayAdminPanel.setLayout(null);
-		getContentPane().removeAll();
-		
-		
-		JLabel lblNewLabel = new JLabel("Cars Found");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblNewLabel.setBounds(170, 24, 99, 19);
-		searchDisplayAdminPanel.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("Somehow displaying data collected from database...");
-		lblNewLabel_1.setBounds(74, 98, 334, 29);
-		searchDisplayAdminPanel.add(lblNewLabel_1);
-		
-		JButton newSearchBtn = new JButton("New Search");
-		newSearchBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				searchAdminPanel();
-			}
-		});
-		newSearchBtn.setBounds(303, 209, 105, 29);
-		searchDisplayAdminPanel.add(newSearchBtn);
-		
-		JLabel label = new JLabel("Admin Controls");
-		label.setBounds(10, 11, 96, 14);
-		searchDisplayAdminPanel.add(label);
-		
-		updatePane(searchDisplayAdminPanel);
-	}
-	*/
 	public void historyAdminPanel() {
+		/**
+		 * Show search history
+		 */
 		JPanel historyAdminPanel = new JPanel();
 		historyAdminPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		historyAdminPanel.setLayout(null);
@@ -969,109 +828,5 @@ public class DynastyGUI extends JFrame {
 		newSearchBtn.setEnabled(true);
 		
 		updatePane(historyAdminPanel);
-	}
-	
-	public void displayPanel() {
-		JPanel displayPanel = new JPanel();
-		displayPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		displayPanel.setLayout(null);
-		getContentPane().removeAll();
-		
-		JLabel displayAll = new JLabel("Somehow collect and display all data from database");
-		displayAll.setBounds(86, 117, 315, 14);
-		displayPanel.add(displayAll);
-		
-		JLabel totalInventory = new JLabel("Entire Inventory");
-		totalInventory.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		totalInventory.setBounds(146, 24, 143, 25);
-		displayPanel.add(totalInventory);
-		
-		JButton backBtn = new JButton("Back");
-		backBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				menuPanel();
-			}
-		});
-		backBtn.setBounds(10, 227, 89, 23);
-		displayPanel.add(backBtn);
-		
-		updatePane(displayPanel);
-	}
-	
-	public void menuPanel() {
-		JPanel menuPanel = new JPanel();
-		menuPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		menuPanel.setLayout(null);
-		getContentPane().removeAll();
-		
-		JLabel lblMainMenu = new JLabel("Main Menu");
-		lblMainMenu.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		lblMainMenu.setBounds(169, 11, 96, 37);
-		menuPanel.add(lblMainMenu);
-		
-		JLabel searchLabel = new JLabel("Search");
-		searchLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		searchLabel.setBounds(66, 75, 142, 17);
-		menuPanel.add(searchLabel);
-		
-		JLabel lblDisplayTotalInventory = new JLabel("Display Total Inventory");
-		lblDisplayTotalInventory.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblDisplayTotalInventory.setBounds(66, 100, 142, 17);
-		menuPanel.add(lblDisplayTotalInventory);
-		
-		JLabel lblLogOut = new JLabel("Log Out");
-		lblLogOut.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblLogOut.setBounds(66, 125, 142, 17);
-		menuPanel.add(lblLogOut);
-		
-		JLabel lblExit = new JLabel("Exit");
-		lblExit.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblExit.setBounds(66, 150, 142, 17);
-		menuPanel.add(lblExit);
-		
-		JButton searchBtn = new JButton("Go");
-		searchBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				searchPanel();
-			}
-		});
-		searchBtn.setBounds(246, 74, 89, 23);
-		menuPanel.add(searchBtn);
-		
-		JButton displayBtn = new JButton("Go");
-		displayBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				displayPanel();
-			}
-		});
-		displayBtn.setBounds(246, 99, 89, 23);
-		menuPanel.add(displayBtn);
-		
-		JButton logOutBtn = new JButton("Go");
-		logOutBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				JOptionPane.showMessageDialog(getContentPane(), "Logging out");
-				loginPanel();
-			}
-		});
-		logOutBtn.setBounds(246, 124, 89, 23);
-		menuPanel.add(logOutBtn);
-		
-		JButton exitBtn = new JButton("Go");
-		exitBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				JOptionPane.showMessageDialog(getContentPane(), "Closing Program");
-				System.exit(0);
-			}
-		});
-		exitBtn.setBounds(246, 149, 89, 23);
-		menuPanel.add(exitBtn);
-		
-		updatePane(menuPanel);
 	}
 }
